@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Tako — Trade On-Chain. Win With The Collective.",
+    "description": "The easiest way to trade on-chain, with community at the center. Tako gives you a self-custodial perp DEX, multilingual VIP signals, and structured education — all in one place.",
+    "ogDescription": "Self-custodial perp DEX, multilingual signals, education, community."
+  },
+  "nav": {
+    "trade": "Trade",
+    "signals": "Signals",
+    "learn": "Learn",
+    "journal": "Journal",
+    "joinSignals": "Join Signals",
+    "launchDex": "Launch DEX",
+    "menu": "Menu"
+  },
+  "hero": {
+    "eyebrow": "Self-custodial · Multilingual · Operator-led",
+    "line1": "TRADE ON-CHAIN.",
+    "line2": "WIN WITH THE",
+    "line3": "COLLECTIVE.",
+    "lead": "The easiest way to trade on-chain — with community at the center. A self-custodial perpetuals DEX, multilingual VIP signals, and structured education from operators who actually trade.",
+    "ctaPrimary": "Launch DEX",
+    "ctaSecondary": "Join VIP Signals"
+  },
+  "stats": {
+    "languages": "Languages Live",
+    "coverage": "Market Coverage",
+    "markets": "Perp Markets",
+    "custody": "Custody. You hold keys."
+  },
+  "pillars": {
+    "headlineA": "FOUR ARMS.",
+    "headlineB": "ONE COLLECTIVE.",
+    "lead": "Trade, learn, signal, and discuss — under one roof. Each part of Tako reinforces the others. The DEX is where you act. The signals are how you find edge. Education sharpens it. Community compounds it.",
+    "dex": {
+      "num": "01 — DEX",
+      "title": "TRADE PERPS ON <span class=\"accent\">TAKO DEX.</span><br>SELF-CUSTODIAL. DEEP LIQUIDITY.",
+      "body": "Up to 100× leverage on 70+ markets, sub-second execution, aggregated liquidity across 17+ chains. Powered by Orderly Network infrastructure. You stay in custody — Tako never holds your assets. Just trade.",
+      "cta": "Launch DEX"
+    },
+    "signals": {
+      "num": "02 — Signals",
+      "title": "LIVE <span class=\"accent\">VIP SIGNALS</span> IN YOUR LANGUAGE.",
+      "body": "Entries, targets, stops, and reasoning — posted live by operators who trade their own calls. Available in 4 languages today, expanding to 8.",
+      "cta": "Join VIP"
+    },
+    "edu": {
+      "num": "03 — Education",
+      "title": "<span class=\"accent\">LEARN</span> FROM PEOPLE WHO TRADE.",
+      "body": "Structured modules from market basics to position sizing, perp mechanics, on-chain analytics, and risk management. Built around real trades — no theory-only nonsense.",
+      "cta": "Start learning"
+    },
+    "journal": {
+      "num": "04 — Journal",
+      "title": "THE <span class=\"accent\">TAKO JOURNAL.</span><br>MARKET NOTES, POST-MORTEMS, DEEP DIVES.",
+      "body": "Weekly market-structure breakdowns, perp funding analysis, narrative tracking, on-chain research, and trade post-mortems — the wins and the L's. Published in multiple languages.",
+      "cta": "Read the Journal"
+    }
+  },
+  "community": {
+    "eyebrow": "VIP Community",
+    "title": "A MULTILINGUAL TRADING FLOOR THAT <span class=\"accent\">NEVER SLEEPS.</span>",
+    "lead": "Operators across global time zones. Signals dropped the moment setups form. Real-time market chat, trade reviews, exclusive macro calls — pick your language, jump in.",
+    "moreComing": "+ More coming",
+    "ctaPrimary": "Get VIP Access",
+    "ctaSecondary": "Join Free Discord",
+    "telegramMeta": "VIP signals only",
+    "discordMeta": "Free + VIP"
+  },
+  "journalTeaser": {
+    "headA": "FROM THE",
+    "headB": "JOURNAL.",
+    "lead": "Weekly notes on market structure, funding rates, perp flow, and what's actually happening on-chain.",
+    "cta": "Read all posts"
+  },
+  "articles": {
+    "read": "Read",
+    "a1": {
+      "tag": "Market Structure",
+      "readtime": "8 min read",
+      "date": "May 8, 2026",
+      "title": "Why Funding Rates Lie — And What To Watch Instead",
+      "excerpt": "Open interest and funding rates have become the consensus dashboard. But in this late-cycle environment, they're noisier than ever. Here's the framework we actually use to size positions."
+    },
+    "a2": {
+      "tag": "Education",
+      "readtime": "5 min",
+      "title": "Perpetuals 101: Leverage Isn't Your Problem — Sizing Is",
+      "excerpt": "Beginner-friendly breakdown of perp mechanics, and why your sizing math matters more than your entry."
+    },
+    "a3": {
+      "tag": "Trade Recap",
+      "readtime": "4 min",
+      "title": "SOL Long: +18% In 14 Hours. What The Chart Told Us",
+      "excerpt": "Walkthrough of a closed VIP call. Entry trigger, scaling plan, where we were almost wrong."
+    }
+  },
+  "ctaStripe": {
+    "headA": "EIGHT ARMS.",
+    "headB": "ONE MARKET.",
+    "lead": "Launch the DEX. Join the signals. Read the journal. Sharpen your edge — in your language.",
+    "ctaPrimary": "Launch Tako DEX",
+    "ctaSecondary": "Join VIP Signals"
+  },
+  "footer": {
+    "tagline": "The easiest way to trade on-chain — with community at the center. Perp DEX, multilingual signals, education, community.",
+    "colProduct": "Product",
+    "colCommunity": "Community",
+    "colContact": "Contact",
+    "linkSignals": "VIP Signals",
+    "linkEducation": "Education",
+    "linkJournal": "Journal",
+    "linkDiscord": "Discord (Free)",
+    "linkTelegram": "Telegram (VIP)",
+    "copyright": "© 2026 Tako. Trade responsibly. Not financial advice.",
+    "poweredBy": "Powered by Orderly Network"
+  }
+}

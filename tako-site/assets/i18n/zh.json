@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Tako — 鏈上交易,與集體共贏。",
+    "description": "最簡單的鏈上交易方式,以社群為核心。Tako 為你提供自托管永續合約 DEX、多語言 VIP 訊號、結構化教育 — 一站式整合。",
+    "ogDescription": "自托管永續 DEX、多語言訊號、教育、社群。"
+  },
+  "nav": {
+    "trade": "交易",
+    "signals": "訊號",
+    "learn": "學習",
+    "journal": "Journal",
+    "joinSignals": "加入訊號",
+    "launchDex": "啟動 DEX",
+    "menu": "選單"
+  },
+  "hero": {
+    "eyebrow": "自托管 · 多語言 · 由實戰交易員主導",
+    "line1": "鏈上交易。",
+    "line2": "與集體",
+    "line3": "共贏。",
+    "lead": "最簡單的鏈上交易方式 — 以社群為核心。自托管永續合約 DEX、多語言 VIP 訊號,以及由實戰交易員打造的結構化教育課程。",
+    "ctaPrimary": "啟動 DEX",
+    "ctaSecondary": "加入 VIP 訊號"
+  },
+  "stats": {
+    "languages": "支援語言",
+    "coverage": "市場覆蓋",
+    "markets": "永續合約市場",
+    "custody": "你掌握私鑰。"
+  },
+  "pillars": {
+    "headlineA": "四隻手臂。",
+    "headlineB": "一個集體。",
+    "lead": "交易、學習、訊號、討論 — 全部整合在一處。Tako 的每個部分都相互強化。DEX 是你出手的地方。訊號幫你找到優勢。教育讓你更銳利。社群讓一切複利成長。",
+    "dex": {
+      "num": "01 — DEX",
+      "title": "在 <span class=\"accent\">TAKO DEX</span> 交易永續合約。<br>自托管。深度流動性。",
+      "body": "70+ 市場、最高 100× 槓桿、亞秒級執行,跨 17+ 條鏈聚合流動性。由 Orderly Network 基礎設施驅動。資產始終由你掌控 — Tako 不持有你的資金。專心交易就好。",
+      "cta": "啟動 DEX"
+    },
+    "signals": {
+      "num": "02 — 訊號",
+      "title": "用你的語言收看 <span class=\"accent\">VIP 即時訊號</span>。",
+      "body": "進場點、目標價、止損點與分析邏輯 — 由親自下單的交易員即時發佈。目前支援 4 種語言,將擴展至 8 種。",
+      "cta": "加入 VIP"
+    },
+    "edu": {
+      "num": "03 — 教育",
+      "title": "向 <span class=\"accent\">真正在交易</span> 的人學習。",
+      "body": "結構化模組從市場基礎到倉位管理、永續合約機制、鏈上分析與風險控制。圍繞真實交易設計 — 杜絕純理論空談。",
+      "cta": "開始學習"
+    },
+    "journal": {
+      "num": "04 — Journal",
+      "title": "<span class=\"accent\">TAKO JOURNAL</span>。<br>市場筆記、覆盤、深度分析。",
+      "body": "每週發佈市場結構分析、永續資金費率解析、敘事追蹤、鏈上研究與交易覆盤 — 包含贏單與虧損。多語言發佈。",
+      "cta": "閱讀 Journal"
+    }
+  },
+  "community": {
+    "eyebrow": "VIP 社群",
+    "title": "一個 <span class=\"accent\">永不停歇</span> 的多語言交易室。",
+    "lead": "交易員遍佈全球時區。setup 形成的瞬間就發佈訊號。即時市場討論、交易覆盤、獨家宏觀分析 — 選擇你的語言,直接加入。",
+    "moreComing": "+ 更多語言即將推出",
+    "ctaPrimary": "取得 VIP 權限",
+    "ctaSecondary": "加入免費 Discord",
+    "telegramMeta": "僅限 VIP 訊號",
+    "discordMeta": "免費 + VIP"
+  },
+  "journalTeaser": {
+    "headA": "來自",
+    "headB": "JOURNAL。",
+    "lead": "每週筆記:市場結構、資金費率、永續合約資金流向,以及鏈上真正在發生什麼。",
+    "cta": "查看所有文章"
+  },
+  "articles": {
+    "read": "閱讀",
+    "a1": {
+      "tag": "市場結構",
+      "readtime": "8 分鐘閱讀",
+      "date": "2026 年 5 月 8 日",
+      "title": "為什麼資金費率在說謊 — 該看什麼指標取代它",
+      "excerpt": "未平倉合約量與資金費率已經成為大家共識的儀表板。但在這個週期後段,它們的噪音比以往任何時候都大。這是我們實際用來決定倉位大小的框架。"
+    },
+    "a2": {
+      "tag": "教育",
+      "readtime": "5 分鐘",
+      "title": "永續合約 101:問題不是槓桿,而是倉位大小",
+      "excerpt": "新手友善的永續合約機制解析,以及為什麼倉位大小的計算比進場點更重要。"
+    },
+    "a3": {
+      "tag": "交易覆盤",
+      "readtime": "4 分鐘",
+      "title": "SOL 多單:14 小時 +18%。圖表告訴我們什麼",
+      "excerpt": "一筆已平倉 VIP 訊號的完整覆盤。進場觸發、加碼計畫、差點犯錯的地方。"
+    }
+  },
+  "ctaStripe": {
+    "headA": "八隻手臂。",
+    "headB": "一個市場。",
+    "lead": "啟動 DEX。加入訊號。閱讀 Journal。用你的語言磨利你的交易優勢。",
+    "ctaPrimary": "啟動 Tako DEX",
+    "ctaSecondary": "加入 VIP 訊號"
+  },
+  "footer": {
+    "tagline": "最簡單的鏈上交易方式 — 以社群為核心。永續 DEX、多語言訊號、教育、社群。",
+    "colProduct": "產品",
+    "colCommunity": "社群",
+    "colContact": "聯絡",
+    "linkSignals": "VIP 訊號",
+    "linkEducation": "教育",
+    "linkJournal": "Journal",
+    "linkDiscord": "Discord(免費)",
+    "linkTelegram": "Telegram(VIP)",
+    "copyright": "© 2026 Tako。請理性交易。本內容非投資建議。",
+    "poweredBy": "由 Orderly Network 提供技術支持"
+  }
+}

@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tako — Trade On-Chain. Win With The Collective.</title>
-<meta name="description" content="The easiest way to trade on-chain, with community at the center. Tako gives you a self-custodial perp DEX, multilingual VIP signals, and structured education — all in one place.">
-<meta property="og:title" content="Tako — Trade On-Chain. Win With The Collective.">
-<meta property="og:description" content="Self-custodial perp DEX, multilingual signals, education, community.">
+<title data-i18n="meta.title">Tako — Trade On-Chain. Win With The Collective.</title>
+<meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="The easiest way to trade on-chain, with community at the center. Tako gives you a self-custodial perp DEX, multilingual VIP signals, and structured education — all in one place.">
+<meta property="og:title" data-i18n-attr="content" data-i18n="meta.title" content="Tako — Trade On-Chain. Win With The Collective.">
+<meta property="og:description" data-i18n-attr="content" data-i18n="meta.ogDescription" content="Self-custodial perp DEX, multilingual signals, education, community.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/logos/octopus.png">
 <link rel="stylesheet" href="assets/style.css">
@@ -21,26 +21,49 @@
     </a>
     <nav>
       <ul class="nav__links">
-        <li><a href="#trade">Trade</a></li>
-        <li><a href="#signals">Signals</a></li>
-        <li><a href="#learn">Learn</a></li>
-        <li><a href="#journal">Journal</a></li>
+        <li><a href="#trade" data-i18n="nav.trade">Trade</a></li>
+        <li><a href="#signals" data-i18n="nav.signals">Signals</a></li>
+        <li><a href="#learn" data-i18n="nav.learn">Learn</a></li>
+        <li><a href="#journal" data-i18n="nav.journal">Journal</a></li>
       </ul>
     </nav>
     <div class="nav__cta">
-      <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-secondary" target="_blank" rel="noopener">Join Signals</a>
+      <!-- Language switcher -->
+      <div class="lang-switcher">
+        <button class="lang-switcher__btn" aria-label="Change language" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-switcher__flag" id="currentFlag">🇺🇸</span>
+          <span class="lang-switcher__code" id="currentCode">EN</span>
+          <span class="lang-switcher__caret">▾</span>
+        </button>
+        <ul class="lang-switcher__menu" role="menu">
+          <li role="menuitem"><button data-lang="en"><span class="lang-flag">🇺🇸</span><span class="lang-label">English</span></button></li>
+          <li role="menuitem"><button data-lang="es"><span class="lang-flag">🇪🇸</span><span class="lang-label">Español</span></button></li>
+          <li role="menuitem"><button data-lang="zh"><span class="lang-flag">🇭🇰</span><span class="lang-label">繁體中文</span></button></li>
+          <li role="menuitem"><button data-lang="vi"><span class="lang-flag">🇻🇳</span><span class="lang-label">Tiếng Việt</span></button></li>
+        </ul>
+      </div>
+      <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="nav.joinSignals">Join Signals</a>
       <a href="https://takodex.com" class="btn btn-primary" target="_blank" rel="noopener">
-        Launch DEX <span class="btn-arrow">→</span>
+        <span data-i18n="nav.launchDex">Launch DEX</span> <span class="btn-arrow">→</span>
       </a>
-      <button class="nav__burger" aria-label="Menu">Menu</button>
+      <button class="nav__burger" aria-label="Menu" data-i18n="nav.menu">Menu</button>
     </div>
   </div>
 </header>
 
-<!-- ============== TICKER (DYNAMIC) ============== -->
+<!-- ============== TICKER ============== -->
 <div class="ticker" aria-hidden="true">
-  <div class="ticker__track" id="ticker-track">
-    <!-- Populated dynamically via CoinGecko API -->
+  <div class="ticker__track">
+    <span class="ticker__item"><span class="ticker__symbol">BTC</span><span class="ticker__price">$104,820</span><span class="ticker__delta-up">+2.41%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">ETH</span><span class="ticker__price">$3,942</span><span class="ticker__delta-up">+1.86%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">SOL</span><span class="ticker__price">$224.10</span><span class="ticker__delta-down">−0.74%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">HYPE</span><span class="ticker__price">$32.41</span><span class="ticker__delta-up">+5.12%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">ARB</span><span class="ticker__price">$0.842</span><span class="ticker__delta-up">+3.21%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">OP</span><span class="ticker__price">$2.18</span><span class="ticker__delta-down">−1.05%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">SUI</span><span class="ticker__price">$4.42</span><span class="ticker__delta-up">+6.81%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">DOGE</span><span class="ticker__price">$0.391</span><span class="ticker__delta-down">−0.92%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">AVAX</span><span class="ticker__price">$48.21</span><span class="ticker__delta-up">+2.15%</span></span>
+    <span class="ticker__item"><span class="ticker__symbol">LINK</span><span class="ticker__price">$24.10</span><span class="ticker__delta-up">+1.92%</span></span>
   </div>
 </div>
 
@@ -50,20 +73,20 @@
 
   <div class="container">
     <div class="hero__inner">
-      <div class="hero__eyebrow eyebrow">Self-custodial · Multilingual · Operator-led</div>
+      <div class="hero__eyebrow eyebrow" data-i18n="hero.eyebrow">Self-custodial · Multilingual · Operator-led</div>
       <h1 class="display hero__title">
-        <span class="line">TRADE ON-CHAIN.</span>
-        <span class="line">WIN WITH THE</span>
-        <span class="line"><span class="accent">COLLECTIVE.</span></span>
+        <span class="line" data-i18n="hero.line1">TRADE ON-CHAIN.</span>
+        <span class="line" data-i18n="hero.line2">WIN WITH THE</span>
+        <span class="line"><span class="accent" data-i18n="hero.line3">COLLECTIVE.</span></span>
       </h1>
-      <p class="lead hero__lead">
+      <p class="lead hero__lead" data-i18n="hero.lead">
         The easiest way to trade on-chain — with community at the center. A self-custodial perpetuals DEX, multilingual VIP signals, and structured education from operators who actually trade.
       </p>
       <div class="hero__cta">
         <a href="https://takodex.com" class="btn btn-primary" target="_blank" rel="noopener">
-          Launch DEX <span class="btn-arrow">→</span>
+          <span data-i18n="hero.ctaPrimary">Launch DEX</span> <span class="btn-arrow">→</span>
         </a>
-        <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-secondary" target="_blank" rel="noopener">Join VIP Signals</a>
+        <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="hero.ctaSecondary">Join VIP Signals</a>
       </div>
     </div>
 
@@ -79,19 +102,19 @@
     <div class="stats__grid">
       <div class="stat reveal">
         <div class="stat__value">4<span class="unit">+</span></div>
-        <div class="stat__label">Languages Live</div>
+        <div class="stat__label" data-i18n="stats.languages">Languages Live</div>
       </div>
       <div class="stat reveal">
         <div class="stat__value">24<span class="unit">/7</span></div>
-        <div class="stat__label">Market Coverage</div>
+        <div class="stat__label" data-i18n="stats.coverage">Market Coverage</div>
       </div>
       <div class="stat reveal">
         <div class="stat__value">70<span class="unit">+</span></div>
-        <div class="stat__label">Perp Markets</div>
+        <div class="stat__label" data-i18n="stats.markets">Perp Markets</div>
       </div>
       <div class="stat reveal">
         <div class="stat__value">0<span class="unit">%</span></div>
-        <div class="stat__label">Custody. You hold keys.</div>
+        <div class="stat__label" data-i18n="stats.custody">Custody. You hold keys.</div>
       </div>
     </div>
   </div>
@@ -101,8 +124,8 @@
 <section class="section" id="trade">
   <div class="container">
     <div class="section-head reveal">
-      <h2 class="section-head__title">FOUR ARMS.<br><span class="accent">ONE COLLECTIVE.</span></h2>
-      <p class="section-head__lead">
+      <h2 class="section-head__title"><span data-i18n="pillars.headlineA">FOUR ARMS.</span><br><span class="accent" data-i18n="pillars.headlineB">ONE COLLECTIVE.</span></h2>
+      <p class="section-head__lead" data-i18n="pillars.lead">
         Trade, learn, signal, and discuss — under one roof. Each part of Tako reinforces the others. The DEX is where you act. The signals are how you find edge. Education sharpens it. Community compounds it.
       </p>
     </div>
@@ -111,50 +134,50 @@
 
       <article class="pillar pillar--wide reveal">
         <div class="pillar__head">
-          <span class="pillar__num">01 — DEX</span>
+          <span class="pillar__num"><span data-i18n="pillars.dex.num">01 — DEX</span></span>
           <svg class="pillar__icon" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M21 7v6M21 7h-6"/></svg>
         </div>
-        <h3 class="pillar__title">TRADE PERPS ON <span class="accent">TAKO DEX.</span><br>SELF-CUSTODIAL. DEEP LIQUIDITY.</h3>
-        <p class="pillar__body">
+        <h3 class="pillar__title" data-i18n="pillars.dex.title" data-i18n-html="true">TRADE PERPS ON <span class="accent">TAKO DEX.</span><br>SELF-CUSTODIAL. DEEP LIQUIDITY.</h3>
+        <p class="pillar__body" data-i18n="pillars.dex.body">
           Up to 100× leverage on 70+ markets, sub-second execution, aggregated liquidity across 17+ chains. Powered by Orderly Network infrastructure. You stay in custody — Tako never holds your assets. Just trade.
         </p>
-        <a href="https://takodex.com" class="btn-link pillar__link" target="_blank" rel="noopener">Launch DEX →</a>
+        <a href="https://takodex.com" class="btn-link pillar__link" target="_blank" rel="noopener"><span data-i18n="pillars.dex.cta">Launch DEX</span> →</a>
       </article>
 
       <article class="pillar reveal" id="signals">
         <div class="pillar__head">
-          <span class="pillar__num">02 — Signals</span>
+          <span class="pillar__num"><span data-i18n="pillars.signals.num">02 — Signals</span></span>
           <svg class="pillar__icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         </div>
-        <h3 class="pillar__title">LIVE <span class="accent">VIP SIGNALS</span> IN YOUR LANGUAGE.</h3>
-        <p class="pillar__body">
+        <h3 class="pillar__title" data-i18n="pillars.signals.title" data-i18n-html="true">LIVE <span class="accent">VIP SIGNALS</span> IN YOUR LANGUAGE.</h3>
+        <p class="pillar__body" data-i18n="pillars.signals.body">
           Entries, targets, stops, and reasoning — posted live by operators who trade their own calls. Available in 4 languages today, expanding to 8.
         </p>
-        <a href="https://upgrade.chat/takoden/upgrades" class="btn-link pillar__link" target="_blank" rel="noopener">Join VIP →</a>
+        <a href="https://upgrade.chat/takoden/upgrades" class="btn-link pillar__link" target="_blank" rel="noopener"><span data-i18n="pillars.signals.cta">Join VIP</span> →</a>
       </article>
 
       <article class="pillar reveal" id="learn">
         <div class="pillar__head">
-          <span class="pillar__num">03 — Education</span>
+          <span class="pillar__num"><span data-i18n="pillars.edu.num">03 — Education</span></span>
           <svg class="pillar__icon" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v6l9 4 9-4V7"/></svg>
         </div>
-        <h3 class="pillar__title"><span class="accent">LEARN</span> FROM PEOPLE WHO TRADE.</h3>
-        <p class="pillar__body">
+        <h3 class="pillar__title" data-i18n="pillars.edu.title" data-i18n-html="true"><span class="accent">LEARN</span> FROM PEOPLE WHO TRADE.</h3>
+        <p class="pillar__body" data-i18n="pillars.edu.body">
           Structured modules from market basics to position sizing, perp mechanics, on-chain analytics, and risk management. Built around real trades — no theory-only nonsense.
         </p>
-        <a href="education.html" class="btn-link pillar__link">Start learning →</a>
+        <a href="education.html" class="btn-link pillar__link"><span data-i18n="pillars.edu.cta">Start learning</span> →</a>
       </article>
 
       <article class="pillar pillar--wide reveal" id="journal">
         <div class="pillar__head">
-          <span class="pillar__num">04 — Journal</span>
+          <span class="pillar__num"><span data-i18n="pillars.journal.num">04 — Journal</span></span>
           <svg class="pillar__icon" viewBox="0 0 24 24"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4V4z"/><path d="M4 4v12a4 4 0 0 0 4 4"/><path d="M8 8h8M8 12h6"/></svg>
         </div>
-        <h3 class="pillar__title">THE <span class="accent">TAKO JOURNAL.</span><br>MARKET NOTES, POST-MORTEMS, DEEP DIVES.</h3>
-        <p class="pillar__body">
+        <h3 class="pillar__title" data-i18n="pillars.journal.title" data-i18n-html="true">THE <span class="accent">TAKO JOURNAL.</span><br>MARKET NOTES, POST-MORTEMS, DEEP DIVES.</h3>
+        <p class="pillar__body" data-i18n="pillars.journal.body">
           Weekly market-structure breakdowns, perp funding analysis, narrative tracking, on-chain research, and trade post-mortems — the wins and the L's. Published in multiple languages.
         </p>
-        <a href="blog.html" class="btn-link pillar__link">Read the Journal →</a>
+        <a href="blog.html" class="btn-link pillar__link"><span data-i18n="pillars.journal.cta">Read the Journal</span> →</a>
       </article>
 
     </div>
@@ -167,21 +190,21 @@
     <div class="community-card">
       <div class="community-card__inner">
         <div>
-          <div class="eyebrow">VIP Community</div>
-          <h2 class="community__title">A MULTILINGUAL TRADING FLOOR THAT <span class="accent">NEVER SLEEPS.</span></h2>
-          <p class="community__lead">
+          <div class="eyebrow" data-i18n="community.eyebrow">VIP Community</div>
+          <h2 class="community__title" data-i18n="community.title" data-i18n-html="true">A MULTILINGUAL TRADING FLOOR THAT <span class="accent">NEVER SLEEPS.</span></h2>
+          <p class="community__lead" data-i18n="community.lead">
             Operators across global time zones. Signals dropped the moment setups form. Real-time market chat, trade reviews, exclusive macro calls — pick your language, jump in.
           </p>
           <div class="lang-chips">
-            <span class="lang-chip">EN English</span>
-            <span class="lang-chip">ES Español</span>
-            <span class="lang-chip">繁中 Traditional Chinese</span>
-            <span class="lang-chip">VN Tiếng Việt</span>
-            <span class="lang-chip" style="color: var(--yellow); border-color: var(--yellow-dim);">+ More coming</span>
+            <span class="lang-chip">🇺🇸 English</span>
+            <span class="lang-chip">🇪🇸 Español</span>
+            <span class="lang-chip">🇭🇰 繁體中文</span>
+            <span class="lang-chip">🇻🇳 Tiếng Việt</span>
+            <span class="lang-chip" style="color: var(--yellow); border-color: var(--yellow-dim);" data-i18n="community.moreComing">+ More coming</span>
           </div>
           <div class="community__cta">
-            <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-yellow" target="_blank" rel="noopener">Get VIP Access <span class="btn-arrow">→</span></a>
-            <a href="https://discord.gg/CjTGnr7c5G" class="btn btn-secondary" target="_blank" rel="noopener">Join Free Discord</a>
+            <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-yellow" target="_blank" rel="noopener"><span data-i18n="community.ctaPrimary">Get VIP Access</span> <span class="btn-arrow">→</span></a>
+            <a href="https://discord.gg/CjTGnr7c5G" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="community.ctaSecondary">Join Free Discord</a>
           </div>
         </div>
 
@@ -190,14 +213,14 @@
             <svg class="platform__icon" viewBox="0 0 24 24"><path d="M21.5 4.5L18.5 19c-.2 1-.8 1.3-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L6.9 13.3l-4.5-1.4c-1-.3-1-1 .2-1.5L20 4.1c.8-.3 1.5.2 1.5 1.4z"/></svg>
             <div>
               <div class="platform__name">Telegram</div>
-              <div class="platform__meta">VIP signals only</div>
+              <div class="platform__meta" data-i18n="community.telegramMeta">VIP signals only</div>
             </div>
           </a>
           <a href="https://discord.gg/CjTGnr7c5G" class="platform" target="_blank" rel="noopener">
             <svg class="platform__icon" viewBox="0 0 24 24"><path d="M19.8 5.3A18 18 0 0 0 15.3 4l-.2.4a16 16 0 0 0-6.2 0L8.7 4A18 18 0 0 0 4.2 5.3 18 18 0 0 0 1 17.5a18 18 0 0 0 5.5 2.7l.5-1c-1-.4-1.7-.8-2.5-1.3l.2-.1c2 1 4.3 1.5 6.3 1.5 2 0 4.3-.4 6.3-1.5l.2.1c-.8.5-1.5.9-2.5 1.3l.5 1A18 18 0 0 0 23 17.5a18 18 0 0 0-3.2-12.2zM8.5 14.6c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1 0 1.9 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2zm7 0c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1 0 1.9 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2z"/></svg>
             <div>
               <div class="platform__name">Discord</div>
-              <div class="platform__meta">Free + VIP</div>
+              <div class="platform__meta" data-i18n="community.discordMeta">Free + VIP</div>
             </div>
           </a>
         </div>
@@ -210,8 +233,8 @@
 <section class="section" style="padding-top: 0;">
   <div class="container">
     <div class="section-head reveal">
-      <h2 class="section-head__title">FROM THE <span class="accent">JOURNAL.</span></h2>
-      <p class="section-head__lead">Weekly notes on market structure, funding rates, perp flow, and what's actually happening on-chain.</p>
+      <h2 class="section-head__title"><span data-i18n="journalTeaser.headA">FROM THE</span> <span class="accent" data-i18n="journalTeaser.headB">JOURNAL.</span></h2>
+      <p class="section-head__lead" data-i18n="journalTeaser.lead">Weekly notes on market structure, funding rates, perp flow, and what's actually happening on-chain.</p>
     </div>
 
     <div class="journal-grid">
@@ -220,23 +243,21 @@
         <div class="article__thumb">
           <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
             <rect width="400" height="280" fill="#000000"/>
-            <path d="M0 200 L 60 180 L 100 160 L 140 175 L 180 130 L 220 145 L 260 100 L 320 110 L 400 70"
-                  stroke="#e5fa37" stroke-width="2" fill="none"/>
-            <path d="M0 200 L 60 180 L 100 160 L 140 175 L 180 130 L 220 145 L 260 100 L 320 110 L 400 70 L 400 280 L 0 280 Z"
-                  fill="#e5fa37" fill-opacity="0.08"/>
+            <path d="M0 200 L 60 180 L 100 160 L 140 175 L 180 130 L 220 145 L 260 100 L 320 110 L 400 70" stroke="#e5fa37" stroke-width="2" fill="none"/>
+            <path d="M0 200 L 60 180 L 100 160 L 140 175 L 180 130 L 220 145 L 260 100 L 320 110 L 400 70 L 400 280 L 0 280 Z" fill="#e5fa37" fill-opacity="0.08"/>
             <circle cx="320" cy="110" r="4" fill="#e5fa37"/>
             <circle cx="400" cy="70" r="4" fill="#e5fa37"/>
           </svg>
         </div>
         <div class="article__body">
           <div class="article__meta">
-            <span class="article__tag">Market Structure</span>
-            <span>8 min read</span>
-            <span>May 8, 2026</span>
+            <span class="article__tag" data-i18n="articles.a1.tag">Market Structure</span>
+            <span data-i18n="articles.a1.readtime">8 min read</span>
+            <span data-i18n="articles.a1.date">May 8, 2026</span>
           </div>
-          <h3 class="article__title">Why Funding Rates Lie — And What To Watch Instead</h3>
-          <p class="article__excerpt">Open interest and funding rates have become the consensus dashboard. But in this late-cycle environment, they're noisier than ever. Here's the framework we actually use to size positions.</p>
-          <a href="post.html" class="article__read">Read</a>
+          <h3 class="article__title" data-i18n="articles.a1.title">Why Funding Rates Lie — And What To Watch Instead</h3>
+          <p class="article__excerpt" data-i18n="articles.a1.excerpt">Open interest and funding rates have become the consensus dashboard. But in this late-cycle environment, they're noisier than ever. Here's the framework we actually use to size positions.</p>
+          <a href="post.html" class="article__read" data-i18n="articles.read">Read</a>
         </div>
       </article>
 
@@ -252,12 +273,12 @@
         </div>
         <div class="article__body">
           <div class="article__meta">
-            <span class="article__tag">Education</span>
-            <span>5 min</span>
+            <span class="article__tag" data-i18n="articles.a2.tag">Education</span>
+            <span data-i18n="articles.a2.readtime">5 min</span>
           </div>
-          <h3 class="article__title">Perpetuals 101: Leverage Isn't Your Problem — Sizing Is</h3>
-          <p class="article__excerpt">Beginner-friendly breakdown of perp mechanics, and why your sizing math matters more than your entry.</p>
-          <a href="post.html" class="article__read">Read</a>
+          <h3 class="article__title" data-i18n="articles.a2.title">Perpetuals 101: Leverage Isn't Your Problem — Sizing Is</h3>
+          <p class="article__excerpt" data-i18n="articles.a2.excerpt">Beginner-friendly breakdown of perp mechanics, and why your sizing math matters more than your entry.</p>
+          <a href="post.html" class="article__read" data-i18n="articles.read">Read</a>
         </div>
       </article>
 
@@ -287,19 +308,19 @@
         </div>
         <div class="article__body">
           <div class="article__meta">
-            <span class="article__tag">Trade Recap</span>
-            <span>4 min</span>
+            <span class="article__tag" data-i18n="articles.a3.tag">Trade Recap</span>
+            <span data-i18n="articles.a3.readtime">4 min</span>
           </div>
-          <h3 class="article__title">SOL Long: +18% In 14 Hours. What The Chart Told Us</h3>
-          <p class="article__excerpt">Walkthrough of a closed VIP call. Entry trigger, scaling plan, where we were almost wrong.</p>
-          <a href="post.html" class="article__read">Read</a>
+          <h3 class="article__title" data-i18n="articles.a3.title">SOL Long: +18% In 14 Hours. What The Chart Told Us</h3>
+          <p class="article__excerpt" data-i18n="articles.a3.excerpt">Walkthrough of a closed VIP call. Entry trigger, scaling plan, where we were almost wrong.</p>
+          <a href="post.html" class="article__read" data-i18n="articles.read">Read</a>
         </div>
       </article>
 
     </div>
 
     <div class="center-cta">
-      <a href="blog.html" class="btn btn-secondary">Read all posts <span class="btn-arrow">→</span></a>
+      <a href="blog.html" class="btn btn-secondary"><span data-i18n="journalTeaser.cta">Read all posts</span> <span class="btn-arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -311,15 +332,15 @@
   </div>
   <div class="container">
     <div class="cta-stripe__inner reveal">
-      <h2 class="cta-stripe__title">EIGHT ARMS.<br><span class="accent">ONE MARKET.</span></h2>
-      <p class="cta-stripe__lead">
+      <h2 class="cta-stripe__title"><span data-i18n="ctaStripe.headA">EIGHT ARMS.</span><br><span class="accent" data-i18n="ctaStripe.headB">ONE MARKET.</span></h2>
+      <p class="cta-stripe__lead" data-i18n="ctaStripe.lead">
         Launch the DEX. Join the signals. Read the journal. Sharpen your edge — in your language.
       </p>
       <div class="cta-stripe__buttons">
         <a href="https://takodex.com" class="btn btn-primary" target="_blank" rel="noopener">
-          Launch Tako DEX <span class="btn-arrow">→</span>
+          <span data-i18n="ctaStripe.ctaPrimary">Launch Tako DEX</span> <span class="btn-arrow">→</span>
         </a>
-        <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-secondary" target="_blank" rel="noopener">Join VIP Signals</a>
+        <a href="https://upgrade.chat/takoden/upgrades" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="ctaStripe.ctaSecondary">Join VIP Signals</a>
       </div>
     </div>
   </div>
@@ -331,7 +352,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <img src="assets/logos/lockup-dark.png" alt="Tako">
-        <p class="footer__tagline">The easiest way to trade on-chain — with community at the center. Perp DEX, multilingual signals, education, community.</p>
+        <p class="footer__tagline" data-i18n="footer.tagline">The easiest way to trade on-chain — with community at the center. Perp DEX, multilingual signals, education, community.</p>
         <div class="socials">
           <a href="https://x.com/takotrading" target="_blank" rel="noopener" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
           <a href="https://discord.gg/CjTGnr7c5G" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.8 5.3A18 18 0 0 0 15.3 4l-.2.4a16 16 0 0 0-6.2 0L8.7 4A18 18 0 0 0 4.2 5.3 18 18 0 0 0 1 17.5a18 18 0 0 0 5.5 2.7l.5-1c-1-.4-1.7-.8-2.5-1.3l.2-.1c2 1 4.3 1.5 6.3 1.5 2 0 4.3-.4 6.3-1.5l.2.1c-.8.5-1.5.9-2.5 1.3l.5 1A18 18 0 0 0 23 17.5a18 18 0 0 0-3.2-12.2zM8.5 14.6c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1 0 1.9 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2zm7 0c-1 0-1.9-1-1.9-2.2 0-1.2.8-2.2 1.9-2.2 1 0 1.9 1 1.9 2.2 0 1.2-.8 2.2-1.9 2.2z"/></svg></a>
@@ -341,19 +362,19 @@
         </div>
       </div>
       <div class="footer__col">
-        <h4>Product</h4>
+        <h4 data-i18n="footer.colProduct">Product</h4>
         <ul>
           <li><a href="https://takodex.com" target="_blank" rel="noopener">Tako DEX</a></li>
-          <li><a href="https://upgrade.chat/takoden/upgrades" target="_blank" rel="noopener">VIP Signals</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="blog.html">Journal</a></li>
+          <li><a href="https://upgrade.chat/takoden/upgrades" target="_blank" rel="noopener" data-i18n="footer.linkSignals">VIP Signals</a></li>
+          <li><a href="education.html" data-i18n="footer.linkEducation">Education</a></li>
+          <li><a href="blog.html" data-i18n="footer.linkJournal">Journal</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Community</h4>
+        <h4 data-i18n="footer.colCommunity">Community</h4>
         <ul>
-          <li><a href="https://discord.gg/CjTGnr7c5G" target="_blank" rel="noopener">Discord (Free)</a></li>
-          <li><a href="https://upgrade.chat/takoden/upgrades" target="_blank" rel="noopener">Telegram (VIP)</a></li>
+          <li><a href="https://discord.gg/CjTGnr7c5G" target="_blank" rel="noopener" data-i18n="footer.linkDiscord">Discord (Free)</a></li>
+          <li><a href="https://upgrade.chat/takoden/upgrades" target="_blank" rel="noopener" data-i18n="footer.linkTelegram">Telegram (VIP)</a></li>
           <li><a href="https://x.com/takotrading" target="_blank" rel="noopener">X / Twitter</a></li>
           <li><a href="https://youtube.com/@takotrading" target="_blank" rel="noopener">YouTube</a></li>
           <li><a href="https://instagram.com/takotrading" target="_blank" rel="noopener">Instagram</a></li>
@@ -361,20 +382,21 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.colContact">Contact</h4>
         <ul>
-          <li><a href="mailto:info@takotrading.com">info@takotrading.com</a></li>
-          <li><a href="mailto:business@takotrading.com">business@takotrading.com</a></li>
+          <li><a href="mailto:info@takocrypto.com">info@takocrypto.com</a></li>
+          <li><a href="mailto:business@takocrypto.com">business@takocrypto.com</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <div>© 2026 Tako. Trade responsibly. Not financial advice.</div>
-      <div>Powered by Orderly Network</div>
+      <div data-i18n="footer.copyright">© 2026 Tako. Trade responsibly. Not financial advice.</div>
+      <div data-i18n="footer.poweredBy">Powered by Orderly Network</div>
     </div>
   </div>
 </footer>
 
+<script src="assets/i18n.js"></script>
 <script src="assets/script.js"></script>
 </body>
 </html>

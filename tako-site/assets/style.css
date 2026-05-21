@@ -1039,3 +1039,133 @@ h1, h2, h3, h4, h5 {
   margin-top: 48px;
   text-align: center;
 }
+
+/* ==========================================================================
+   LANGUAGE SWITCHER
+   ========================================================================== */
+
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white-line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  line-height: 1;
+}
+
+.lang-switcher__btn:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+.lang-switcher__flag {
+  font-size: 1.05rem;
+  line-height: 1;
+  /* Force emoji rendering even where system might substitute */
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+}
+
+.lang-switcher__code {
+  text-transform: uppercase;
+}
+
+.lang-switcher__caret {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  transition: transform 0.2s ease;
+}
+
+.lang-switcher__btn[aria-expanded="true"] .lang-switcher__caret {
+  transform: rotate(180deg);
+}
+
+.lang-switcher__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 200px;
+  background: var(--black-elev);
+  border: 1px solid var(--white-line-strong);
+  border-radius: var(--radius);
+  padding: 6px;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 110;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.lang-switcher__menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-switcher__menu li {
+  list-style: none;
+}
+
+.lang-switcher__menu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  color: var(--white-dim);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-switcher__menu button:hover {
+  background: var(--yellow-soft);
+  color: var(--white);
+}
+
+.lang-switcher__menu button.is-active {
+  background: var(--yellow-soft);
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+.lang-switcher__menu .lang-flag {
+  font-size: 1.15rem;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+  line-height: 1;
+}
+
+.lang-switcher__menu .lang-label {
+  flex: 1;
+}
+
+/* On smaller screens, hide the "Join Signals" secondary button but keep the
+   language switcher visible — it's a more critical control */
+@media (max-width: 920px) {
+  .lang-switcher__btn {
+    padding: 8px 10px;
+    font-size: 0.78rem;
+  }
+  .lang-switcher__code {
+    display: none; /* On mobile show just the flag + caret */
+  }
+}

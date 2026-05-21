@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Tako — Giao Dịch On-Chain. Thắng Cùng Tập Thể.",
+    "description": "Cách dễ nhất để giao dịch on-chain, với cộng đồng là trung tâm. Tako mang đến perp DEX self-custodial, tín hiệu VIP đa ngôn ngữ và đào tạo bài bản — tất cả trong một.",
+    "ogDescription": "Perp DEX self-custodial, tín hiệu đa ngôn ngữ, đào tạo, cộng đồng."
+  },
+  "nav": {
+    "trade": "Giao Dịch",
+    "signals": "Tín Hiệu",
+    "learn": "Học",
+    "journal": "Journal",
+    "joinSignals": "Tham Gia Tín Hiệu",
+    "launchDex": "Vào DEX",
+    "menu": "Menu"
+  },
+  "hero": {
+    "eyebrow": "Self-custodial · Đa ngôn ngữ · Dẫn dắt bởi trader thực chiến",
+    "line1": "GIAO DỊCH ON-CHAIN.",
+    "line2": "THẮNG CÙNG",
+    "line3": "TẬP THỂ.",
+    "lead": "Cách dễ nhất để giao dịch on-chain — với cộng đồng là trung tâm. Một perp DEX self-custodial, tín hiệu VIP đa ngôn ngữ, và chương trình đào tạo bài bản từ những trader thực sự đang giao dịch.",
+    "ctaPrimary": "Vào DEX",
+    "ctaSecondary": "Tham Gia Tín Hiệu VIP"
+  },
+  "stats": {
+    "languages": "Ngôn Ngữ Đang Hỗ Trợ",
+    "coverage": "Hoạt Động Thị Trường",
+    "markets": "Cặp Perp",
+    "custody": "Custody. Bạn giữ khóa."
+  },
+  "pillars": {
+    "headlineA": "BỐN CÁNH TAY.",
+    "headlineB": "MỘT TẬP THỂ.",
+    "lead": "Giao dịch, học, nhận tín hiệu, và thảo luận — tất cả dưới cùng một mái nhà. Mỗi phần của Tako bổ trợ cho nhau. DEX là nơi bạn ra quyết định. Tín hiệu là cách bạn tìm lợi thế. Đào tạo mài giũa nó. Cộng đồng nhân nó lên.",
+    "dex": {
+      "num": "01 — DEX",
+      "title": "GIAO DỊCH PERP TRÊN <span class=\"accent\">TAKO DEX.</span><br>SELF-CUSTODIAL. THANH KHOẢN SÂU.",
+      "body": "Đòn bẩy lên tới 100× trên 70+ cặp, thực thi dưới 1 giây, thanh khoản tổng hợp qua 17+ chain. Vận hành bởi hạ tầng Orderly Network. Tài sản luôn do bạn nắm — Tako không bao giờ giữ tiền của bạn. Cứ trade thôi.",
+      "cta": "Vào DEX"
+    },
+    "signals": {
+      "num": "02 — Tín Hiệu",
+      "title": "TÍN HIỆU <span class=\"accent\">VIP TRỰC TIẾP</span> BẰNG NGÔN NGỮ CỦA BẠN.",
+      "body": "Điểm vào, target, stop loss, và lý do — đăng trực tiếp bởi những trader đang trade chính lệnh của họ. Hỗ trợ 4 ngôn ngữ hôm nay, sẽ mở rộng lên 8.",
+      "cta": "Tham Gia VIP"
+    },
+    "edu": {
+      "num": "03 — Đào Tạo",
+      "title": "<span class=\"accent\">HỌC</span> TỪ NHỮNG NGƯỜI THỰC SỰ TRADE.",
+      "body": "Các module bài bản từ kiến thức thị trường cơ bản đến quản lý position size, cơ chế perp, phân tích on-chain và quản lý rủi ro. Xây dựng quanh các trade thực tế — không lý thuyết suông.",
+      "cta": "Bắt đầu học"
+    },
+    "journal": {
+      "num": "04 — Journal",
+      "title": "<span class=\"accent\">TAKO JOURNAL.</span><br>GHI CHÚ THỊ TRƯỜNG, POST-MORTEM, PHÂN TÍCH SÂU.",
+      "body": "Phân tích cấu trúc thị trường hàng tuần, funding rate của perp, theo dõi narrative, nghiên cứu on-chain, và post-mortem các trade — cả thắng lẫn thua. Xuất bản bằng nhiều ngôn ngữ.",
+      "cta": "Đọc Journal"
+    }
+  },
+  "community": {
+    "eyebrow": "Cộng Đồng VIP",
+    "title": "MỘT SÀN GIAO DỊCH ĐA NGÔN NGỮ <span class=\"accent\">KHÔNG BAO GIỜ NGỦ.</span>",
+    "lead": "Các trader trải khắp các múi giờ toàn cầu. Tín hiệu được đăng ngay khoảnh khắc setup hình thành. Chat thị trường real-time, review trade, các call macro độc quyền — chọn ngôn ngữ của bạn, vào ngay.",
+    "moreComing": "+ Thêm ngôn ngữ sắp ra mắt",
+    "ctaPrimary": "Lấy Quyền VIP",
+    "ctaSecondary": "Vào Discord Miễn Phí",
+    "telegramMeta": "Chỉ tín hiệu VIP",
+    "discordMeta": "Miễn phí + VIP"
+  },
+  "journalTeaser": {
+    "headA": "TỪ",
+    "headB": "JOURNAL.",
+    "lead": "Ghi chú hàng tuần về cấu trúc thị trường, funding rate, dòng tiền perp, và những gì thực sự đang xảy ra on-chain.",
+    "cta": "Xem tất cả bài viết"
+  },
+  "articles": {
+    "read": "Đọc",
+    "a1": {
+      "tag": "Cấu Trúc Thị Trường",
+      "readtime": "8 phút đọc",
+      "date": "8 tháng 5, 2026",
+      "title": "Tại sao Funding Rate đang nói dối — và nên xem gì thay thế",
+      "excerpt": "Open interest và funding rate đã trở thành dashboard mặc định mà ai cũng nhìn. Nhưng ở giai đoạn cuối của cycle này, chúng nhiễu hơn bao giờ hết. Đây là framework chúng tôi thực sự dùng để quyết định position size."
+    },
+    "a2": {
+      "tag": "Đào Tạo",
+      "readtime": "5 phút",
+      "title": "Perpetuals 101: Vấn đề không phải là đòn bẩy, mà là sizing",
+      "excerpt": "Giải thích dễ hiểu về cơ chế perp, và tại sao tính toán sizing quan trọng hơn điểm vào lệnh của bạn."
+    },
+    "a3": {
+      "tag": "Review Trade",
+      "readtime": "4 phút",
+      "title": "SOL Long: +18% trong 14 giờ. Biểu đồ đã nói gì với chúng tôi",
+      "excerpt": "Phân tích chi tiết một lệnh VIP đã đóng. Tín hiệu vào lệnh, kế hoạch scaling, chỗ chúng tôi suýt sai."
+    }
+  },
+  "ctaStripe": {
+    "headA": "TÁM CÁNH TAY.",
+    "headB": "MỘT THỊ TRƯỜNG.",
+    "lead": "Vào DEX. Tham gia tín hiệu. Đọc journal. Mài sắc lợi thế của bạn — bằng ngôn ngữ của bạn.",
+    "ctaPrimary": "Vào Tako DEX",
+    "ctaSecondary": "Tham Gia Tín Hiệu VIP"
+  },
+  "footer": {
+    "tagline": "Cách dễ nhất để giao dịch on-chain — với cộng đồng là trung tâm. Perp DEX, tín hiệu đa ngôn ngữ, đào tạo, cộng đồng.",
+    "colProduct": "Sản Phẩm",
+    "colCommunity": "Cộng Đồng",
+    "colContact": "Liên Hệ",
+    "linkSignals": "Tín Hiệu VIP",
+    "linkEducation": "Đào Tạo",
+    "linkJournal": "Journal",
+    "linkDiscord": "Discord (Miễn phí)",
+    "linkTelegram": "Telegram (VIP)",
+    "copyright": "© 2026 Tako. Giao dịch có trách nhiệm. Không phải lời khuyên đầu tư.",
+    "poweredBy": "Vận hành bởi Orderly Network"
+  }
+}
