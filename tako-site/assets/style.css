@@ -264,11 +264,13 @@ h1, h2, h3, h4, h5 {
 .nav__brand {
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .nav__brand img {
   height: 32px;
   width: auto;
+  flex-shrink: 0;
 }
 
 .nav__links {
